@@ -21,6 +21,8 @@ const Form_xx = () => {
         console.log(error);
       }
     },
+
+    //自動撈取資料
     onSuccess: () => {
       queryClient.invalidateQueries({
         queryKey: ['tasks'],
@@ -43,7 +45,7 @@ const Form_xx = () => {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <h4>task bud -- htchung</h4>
+      <h4>task bud -- Tao, Shou Yu</h4>
       <div className='form-control'>
         <input
           type='text '
